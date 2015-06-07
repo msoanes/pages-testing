@@ -1,11 +1,15 @@
+html {
+  background-color: #effeef;
+}
 
 body {
-  font-family: sans-serif;
+  font-family: 'Cambay', sans-serif;
   margin: 0;
 }
 
 .nav {
   height: 60px;
+  margin: auto;
   background-color: #666666;
 }
 
@@ -98,22 +102,41 @@ div.primary:hover {
 
 .content {
   margin: auto;
-  position: absolute;
+  /*position: absolute;*/
   top: 60px;
-  height: 900px;
-  width: 100%;
-  background-color: #effeef;
-  padding: none;
+  width: 900px;
+  padding: 0 0 50px 0;
+  padding-bottom: 50px;
 }
 
-.title, .song-list-item {
+.content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.title, .song-list-item, .player {
   color: #666;
   max-width: 600px;
-  margin: auto;
   background-color: white;
   margin: none;
-  box-shadow: 2px 2px 5px #555;
+  box-shadow: 1px 1px 4px #555;
   cursor: default;
+  transition: box-shadow 0;
+}
+
+.left-content, .right-content {
+  float: left;
+}
+
+.left-content {
+  width: 590px;
+}
+
+.right-content {
+  width: 290px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .title {
@@ -123,11 +146,12 @@ div.primary:hover {
 .song-list-item {
   height: 80px;
   margin-top: 10px;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 .title h1 {
   margin-left: 30px;
+  margin-top: 20px;
 }
 
 .play-button {
@@ -168,7 +192,7 @@ div.primary:hover {
 
 .play-button:active:after {
   transition: none;
-  border-left-color: white;
+  border-left-color: #444;
 }
 
 .song-info {
@@ -176,6 +200,7 @@ div.primary:hover {
   line-height: 0;
   padding-left: 5px;
   font-size: 14px;
+  width: 500px;
 }
 
 .song-title, .song-uploader {
@@ -198,4 +223,65 @@ div.primary:hover {
 .time-info {
   position: relative;
   top: 17px;
+}
+
+.player {
+  width: 100%;
+  height: 290px;
+}
+
+.song-controls {
+  clear: left;
+  overflow: hidden;
+  padding: 10px;
+}
+
+input[type=range] {
+  height: 5px;
+  -webkit-appearance: none;
+  background-color: #aaa;
+  position: relative;
+  cursor: pointer;
+  left: -2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 5px;
+  background-color: #005025;
+}
+
+.active.song-list-item .song-info .song-title {
+  /*color: #f50;*/
+}
+
+.active.song-list-item .play-button {
+  background-color: #f50;
+}
+
+.tags {
+  float: right;
+}
+
+.tag {
+  background-color: #ccc;
+  border-radius: 3px;
+  padding: 2px 5px 0px 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.tag:hover {
+  color: #000;
+}
+
+.tag:active {
+  transition: none;
+  background-color: #999;
+}
+
+.song-info-main {
+  width: auto;
 }
