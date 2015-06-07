@@ -23,6 +23,7 @@ body {
 div.link {
   cursor: pointer;
   padding: 0 10px;
+  background-color: #444;
 }
 
 div.link > a:link {
@@ -43,6 +44,7 @@ div:link:active {
 .nav-bar div.search-bar {
   position: relative;
   overflow: hidden;
+  background-color: #444;
 }
 
 .nav-bar .logo {
