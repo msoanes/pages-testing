@@ -1,0 +1,201 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.nav {
+  height: 60px;
+  background-color: #666666;
+}
+
+.nav-bar {
+  margin: auto;
+  max-width: 900px;
+  margin: none;
+  position: relative;
+}
+
+.nav-bar > .left-nav {
+  float: left;
+}
+
+div.link {
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+div.link > a:link {
+  color: #ddd;
+  line-height: 60px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-bar  div.link:hover > a:link {
+  color: #fff;
+}
+
+div:link:active {
+  background-color: #444444;
+}
+
+.nav-bar div.search-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bar .logo {
+  font-family: 'Domine', serif;
+  font-size: 14pt;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 60px;
+  background-color: #358f7f;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-bar > .right-nav {
+  float: right;
+  padding-left: 10px;
+}
+
+.right-nav > div, .left-nav > div {
+  float: left;
+}
+
+input {
+  background-color: #eee;
+  font-size: 12pt;
+  margin-top: 15px;
+  height: 30px;
+  width: 100%;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.logo:hover {
+  background-color: #379f82;
+}
+
+.link.primary {
+  background-color: #02735f;
+  transition: background-color 0.2s;
+}
+
+div.primary > a:link {
+  color: #fff;
+}
+
+div.primary:hover {
+  background-color: #12835f;
+}
+
+.content {
+  margin: auto;
+  position: absolute;
+  top: 60px;
+  height: 900px;
+  width: 100%;
+  background-color: #effeef;
+  padding: none;
+}
+
+.title, .song-list-item {
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  margin: none;
+  box-shadow: 2px 2px 5px #555;
+  cursor: default;
+}
+
+.title {
+  line-height: 60px;
+}
+
+.song-list-item {
+  height: 80px;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+
+.title h1 {
+  margin-left: 30px;
+}
+
+.play-button {
+  float: left;
+  height: 80px;
+  width: 80px;
+  background-color: #358f7f;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.play-button:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid white;
+  position: absolute;
+  top:15px;
+  left: 20px;
+  transition: border-left-color 0.2s;
+}
+
+.play-button:hover {
+  background-color: #12835f;
+  cursor: pointer;
+}
+
+.play-button:hover:after {
+  border-left-color: #CCC;
+}
+
+.play-button:active {
+  transition: none;
+  background-color: #12735f;
+}
+
+.play-button:active:after {
+  transition: none;
+  border-left-color: white;
+}
+
+.song-info {
+  float: left;
+  line-height: 0;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.song-title, .song-uploader {
+  cursor: pointer;
+}
+
+.song-uploader {
+  font-size: 12pt;
+  color: #999;
+}
+
+.song-title:hover {
+  color: #333;
+}
+
+.song-uploader:hover {
+  color: #005025;
+}
+
+.time-info {
+  position: relative;
+  top: 17px;
+}
