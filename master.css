@@ -69,18 +69,22 @@ div:link:active {
   float: left;
 }
 
-input {
+input, textarea {
   background-color: #eee;
   font-size: 12pt;
-  margin-top: 15px;
   height: 30px;
   width: 100%;
-  box-shadow: none;
+  border: 1px solid #aaa;
+  padding-left: 4px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none;
   background-color: #fff;
+}
+
+.search-bar input {
+  margin-top: 15px;
 }
 
 .logo:hover {
@@ -115,7 +119,7 @@ div.primary:hover {
   clear: both;
 }
 
-.title, .song-list-item, .player {
+.title, .song-list-item, .player, .song-form {
   color: #666;
   max-width: 600px;
   background-color: white;
@@ -284,4 +288,20 @@ input[type=range]::-webkit-slider-thumb {
 
 .song-info-main {
   width: auto;
+}
+
+.song-form {
+  padding: 20px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.song-form label {
+  font-size: 14pt;
+  line-height: 2;
+  position: relative;
+  top: 10px;
 }

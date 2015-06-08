@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>SilentIsland</title>
+    <link href='//fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="spinner.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-bar">
+        <div class="left-nav">
+          <div class="logo">SilentIsland</div>
+          <div class="link"><a href="javascript:void(0)">Explore</a></div>
+          <div class="link"><a href="javascript:void(0)">Stream</a></div>
+        </div>
+
+        <div class="right-nav">
+          <div class="link primary"><a href="javascript:void(0)">Upload</a></div>
+          <div class="link"><a href="javascript:void(0)">Sign Out</a></div>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" name="name" value="" placeholder="Search for artists, songs or tags"/>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div class="left-content">
+        <div class="title">
+          <h1>Upload song</h1>
+        </div>
+
+        <form class="song-form">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" value="" />
+
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+
+          <label for="tags">Tags</label>
+          <input type="text" name="tags" id="tags" value="">
+        </form>
+      </div>
+
+      <div class="right-content">
+        <div class="player">
+          <div class="play-button play-button-main"></div>
+          <div class="song-info song-info-main">
+            <h2 class="song-title">Hoppipolla</h2>
+            <p class="song-uploader">annarose</p>
+            <p class="time-info">
+              <span class="time-elapsed">1:23</span> /
+              <span class="time-total">4:56</span>
+            </p>
+          </div>
+          <div class="song-controls">
+            <input type="range" name="name" min="0" max="296" value="0">
+          </div>
+        </div>
+
+        <div class='song-list-item'></div>
+      </div>
+    </div>
+  </body>
+</html>
